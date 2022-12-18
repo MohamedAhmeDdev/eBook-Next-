@@ -10,13 +10,13 @@ function CarouselComp() {
      <Carousel variant="dark">
         <Carousel.Item className='row '>
          <div className='col-5 align-items-center'>
-         <Image className="justify-content-center"  src={Book} alt="First slide" />
+         <Image className="justify-content-center imageC"  src={Book} alt="First slide" />
          </div>
           <Carousel.Caption>
             <div className='mb-5 align-items-center d-none d-lg-inline'>
             <div>
             <h5>Books</h5>
-            <p>To each individual the world will take on a different connotation of meaning, important lies in the desire to search for an answer.</p>
+            <p>individual the world take a different connotation of meaning,search for an answer.</p>
             </div>
 
             </div>
@@ -25,7 +25,7 @@ function CarouselComp() {
 
         <Carousel.Item className='row '>
         <div className='col-5 align-items-center'>
-         <Image className="justify-content-center"  src={Book2} alt="First slide" />
+         <Image className="justify-content-center imageC"  src={Book2} alt="First slide" />
          </div>
           <Carousel.Caption>
           <div className='mb-5 align-items-center d-none d-lg-inline'>
