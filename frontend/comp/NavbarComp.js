@@ -12,6 +12,9 @@ function NavbarComp() {
         <li className="nav-item px-1">
           <a className="nav-link" href="/">Home</a>
         </li>
+        <li className="nav-item px-1">
+          <a className="nav-link" href="/FormPage">Form</a>
+        </li>
         <li className="nav-item px-2">
           <a className="nav-link" href="/WishList">WishList</a>
         </li>
