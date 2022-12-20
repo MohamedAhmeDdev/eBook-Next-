@@ -16,7 +16,7 @@ body {
 
 
 .imageC{
-  width: 900px;
+  width: 600px;
   height: 500px;
 }
 
@@ -37,4 +37,12 @@ body {
   margin:  30px -50px;
   position: absolute;
    transform: rotate(-60deg);
+}
+
+
+.des{
+  /* width: 210px; */
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
 }
