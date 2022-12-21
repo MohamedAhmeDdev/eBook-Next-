@@ -9,11 +9,11 @@ function Header() {
       <div className=" navbar-collapse justify-content-center">
         <ul className="navbar-nav  mb-2 mb-lg-0">
 
-         {/* <button type="button" className="btn btn-outline-info  my-2">Secondary</button>
+         <button type="button" className="btn btn-outline-info my-2">Fantasy</button>
 
-          <button type="button" className="btn btn-outline-info   my-2">Secondary</button>
+          <button type="button" className="btn btn-outline-info my-2">Secondary</button>
 
-          <button type="button" className="btn btn-outline-info   my-2">Secondary</button> */}
+          <button type="button" className="btn btn-outline-info my-2">Secondary</button>
 
         </ul>
        
