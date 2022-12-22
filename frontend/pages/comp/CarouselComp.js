@@ -1,8 +1,8 @@
 import Image from 'next/image';
 import React from 'react'
 import Carousel from 'react-bootstrap/Carousel';
-import Book from "../public/h.jpg";
-import Book2 from "../public/gg.jpg";
+import Book from "../../public/h.jpg";
+import Book2 from "../../public/gg.jpg";
 
 function CarouselComp() {
   return (

@@ -46,3 +46,22 @@ body {
   overflow: hidden;
   text-overflow: ellipsis;
 }
+
+.container{
+  height: 50px;
+  width: 200px;
+}
+
+.list-card{
+  width: 200px
+}
+
+
+.imgId{
+  width:300px;
+  height: 18rem;
+}
+
+.info{
+  height: 250px;
+}
