@@ -30,25 +30,3 @@ function NavbarComp() {
 
 export default NavbarComp
 
-
-
-
-// <div classNameName={style.navbar}>
-// <div classNameName={style.logo}>
-//     <Link href="/"><h3>eBook</h3></Link>
-// </div>
-
-// <nav classNameName={style.navbar_nav} style={{ right: openMenu ? "100%" : "0" }}>
-//     <ul>
-//         <li><Link onClick={openResponsive} href="/">Home</Link></li>
-//         <li><Link onClick={openResponsive} href="/WishList">WishList</Link></li>
-//         <li><Link onClick={openResponsive} href="#">Contact</Link></li>
-//     </ul>
-// </nav>
-
-// <div classNameName={style.hamburger} onClick={openResponsive}>
-//     <div></div>
-//     <div></div>
-//     <div></div>
-// </div>
-// </div>

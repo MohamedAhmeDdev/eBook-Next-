@@ -7,6 +7,7 @@ import Link from 'next/link';
 
 function Cards() {
     const [books, setBooks] = useState([]);
+    const [free] = useState('free');
     const [currentPage, setCurrentPage] = useState(1);
     const [postsPerPage] = useState(10);
 
@@ -35,10 +36,10 @@ const currentPosts = books.slice(indexOfFirstPost, indexOfLastPost);
       <div className='container-fluid '>
             <div className='row gap-5 m-5 mx-xxl-5 justify-content-center'>
             {currentPosts.map((book , id) =>(
-                <div key={id} className="card col-8 col-md-5 col-lg-3 col-xl-2 col-xxl-2">
+                <div key={id} className="card col-8 col-md-3 col-lg-2 col-xl-2 col-xxl-2">
                 <div className='div'>
-                    <div className='bg-success px-5 py-2 price text-light'>{book.BookPrice}</div>
-                    <img className="justify-content-center img img-fluid"  src={`http://localhost:5000/${book.bookImage}`} alt="" />
+                    <div className={book.BookPrice == free? "bg-success px-5 py-2 price text-light" :'bg-info px-5 py-2 price text-dark'}>{book.BookPrice}</div>
+                    <img className="justify-content-center img"  src={`http://localhost:5000/${book.bookImage}`} alt="" />
                 </div>
                     <div className="card-body">
                     <h5 className="card-title text-lowercase fs-6">{book.bookName}</h5>

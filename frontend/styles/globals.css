@@ -65,3 +65,7 @@ body {
 .info{
   height: 250px;
 }
+
+.text{
+  font-size: 13px;
+}
