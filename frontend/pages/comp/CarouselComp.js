@@ -6,39 +6,38 @@ import Book2 from "../../public/gg.jpg";
 
 function CarouselComp() {
   return (
-    <div>
-     <Carousel variant="dark">
-        <Carousel.Item className='row '>
-         <div className='col-5 align-items-center'>
-         <Image className="justify-content-center imageC"  src={Book} alt="First slide" />
-         </div>
-          <Carousel.Caption>
-            <div className='mb-5 align-items-center d-none d-lg-inline'>
-            <div>
+   
+    <Carousel variant="dark">
+    <Carousel.Item>
+      <div className="row justify-content-center">
+        <div className="col-6">
+          <Image className="d-block w-100" src={Book} alt="First slide" />
+        </div>
+        <div className="col-6 d-flex align-items-center">
+          <div>
             <h5>Books</h5>
-            <p>individual the world take a different connotation of meaning,search for an answer.</p>
-            </div>
-
-            </div>
-          </Carousel.Caption>
-        </Carousel.Item>
-
-        <Carousel.Item className='row '>
-        <div className='col-5 align-items-center'>
-         <Image className="justify-content-center imageC"  src={Book2} alt="First slide" />
-         </div>
-          <Carousel.Caption>
-          <div className='mb-5 align-items-center d-none d-lg-inline'>
-            <div>
-            <h5>knowledge</h5>
-            <p>Books provide us with knowledge, knowledge is what keeps as moving forward</p>
-            </div>
-
-            </div>
-          </Carousel.Caption>
-        </Carousel.Item>
-   </Carousel>
-    </div>
+            <p>Individuals perceive the world differently, but books are a way to seek answers and new perspectives.</p>
+          </div>
+        </div>
+      </div>
+    </Carousel.Item>
+  
+    <Carousel.Item>
+      <div className="row justify-content-center">
+        <div className="col-6">
+          <Image className="d-block w-100" src={Book2} alt="Second slide" />
+        </div>
+        <div className="col-6 d-flex align-items-center">
+          <div>
+            <h5>Knowledge</h5>
+            <p>Books provide us with knowledge, and knowledge is what drives us forward.</p>
+          </div>
+        </div>
+      </div>
+    </Carousel.Item>
+  </Carousel>
+  
+  
   )
 }
 
