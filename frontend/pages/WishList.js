@@ -2,6 +2,7 @@ import React from 'react'
 import Head from 'next/head'
 import { useState, useEffect } from 'react'
 import Link from 'next/link';
+import Image from 'next/image';
 
 
 function WishList({ setWishlist, wishlist }) {
@@ -13,6 +14,7 @@ function WishList({ setWishlist, wishlist }) {
       setWishlist(storedWishlist);
     }
   }, [setWishlist]);
+
 
   const removeFromWishlist = (bookId) => {
     const newWishlist = wishlist.filter((list) => list.book.id !== bookId);

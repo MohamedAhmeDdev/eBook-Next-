@@ -1,4 +1,5 @@
 import { useState } from 'react'
+import Image from 'next/image';
 
 export const getStaticPaths = async () => {
   const res = await fetch('http://localhost:5000/books');
@@ -28,7 +29,7 @@ export const getStaticProps = async (context) => {
 }
 
 
-  const bookInfo = ({ user }) => {
+  const BookInfo = ({ user }) => {
     const [free] = useState('free');
 
   return (
@@ -36,7 +37,7 @@ export const getStaticProps = async (context) => {
       <div className='row justify-content-center align-items-center my-5'>
         
         <div className='col-md-5  shadow'>
-          <img className="mx-auto d-block imgId my-2 img-fluid"  src={`http://localhost:5000/${user.bookImage}`} alt="" />
+          <Image className="mx-auto d-block imgId my-2 img-fluid"  src={`http://localhost:5000/${user.bookImage}`} alt="" />
         </div>
 
          <div className='col-md-4 d-block'>
@@ -76,4 +77,4 @@ export const getStaticProps = async (context) => {
   )
 }
 
-export default bookInfo;
+export default BookInfo;
