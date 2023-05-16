@@ -12,7 +12,7 @@ function WishList({ setWishlist, wishlist }) {
     if (storedWishlist) {
       setWishlist(storedWishlist);
     }
-  }, []);
+  }, [setWishlist]);
 
   const removeFromWishlist = (bookId) => {
     const newWishlist = wishlist.filter((list) => list.book.id !== bookId);
@@ -34,7 +34,7 @@ function WishList({ setWishlist, wishlist }) {
                 <div className={list.book.BookPrice === 'free' ? 'badge bg-success price' : 'badge bg-info price'}>
                   {list.book.BookPrice}
                 </div>
-                <img className='img-fluid' src={`http://localhost:5000/${list.book.bookImage}`} alt={list.bookName} />
+                <Image className='img-fluid' src={`http://localhost:5000/${list.book.bookImage}`} alt={list.bookName} />
               </div>
               <div className='card-body'>
                 <h5 className='card-title text-lowercase fs-6'>{list.book.bookName}</h5>
