@@ -17,7 +17,7 @@ const Home = ({wishlist, setWishlist}) => {
       <title>HomePage</title>
     </Head>
     <Header selectedCategory={selectedCategory} setSelectedCategory={setSelectedCategory}/>
-    <CarouselComp/>
+    {/* <CarouselComp/> */}
     <Cards  selectedCategory={selectedCategory} wishlist={wishlist} setWishlist={setWishlist}/>
 
     <div title='top' className='float-end mx-5'><Link href="#"><BsFillArrowUpSquareFill size="2em "/></Link></div>

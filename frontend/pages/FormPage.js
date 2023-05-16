@@ -28,7 +28,7 @@ function FormPage() {
         formData.append('BookType', BookType)
 
         await axios.post('http://localhost:5000/books',formData)
-    {
+        {
         setBookName('');
         setBookAuthor('');
         setBookDescription('');
@@ -36,9 +36,8 @@ function FormPage() {
         setBookPrice('');
         setBookType('');
         setMessage("Book Added")
-    
-    }
-}
+      }
+      }
     }
 
 
