@@ -3,7 +3,7 @@ import Head from 'next/head'
 import { useState, useEffect } from 'react'
 import Link from 'next/link';
 import Image from 'next/image';
-
+import {SERVER_URL} from '../context'
 
 function WishList({ setWishlist, wishlist }) {
   const [free] = useState('free');
@@ -36,7 +36,7 @@ function WishList({ setWishlist, wishlist }) {
                 <div className={list.book.BookPrice === 'free' ? 'badge bg-success price' : 'badge bg-info price'}>
                   {list.book.BookPrice}
                 </div>
-                <Image className='img-fluid' src={`https://ebook-bxky.onrender.com/${list.book.bookImage}`} width={300}  height={300}  alt={list.bookName} />
+                <Image className='img-fluid' src={`${SERVER_URL}/${list.book.bookImage}`} width={300}  height={300}  alt={list.bookName} />
               </div>
               <div className='card-body'>
                 <h5 className='card-title text-lowercase fs-6'>{list.book.bookName}</h5>

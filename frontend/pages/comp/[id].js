@@ -38,7 +38,7 @@ export const getStaticProps = async (context) => {
       <div className='row justify-content-center align-items-center my-5'>
         
         <div className='col-md-5  shadow'>
-          <Image className="mx-auto d-block imgId my-2 img-fluid"  src={`https://ebook-bxky.onrender.com/${user.bookImage}`} width={300}  height={300}  alt="" />
+          <Image className="mx-auto d-block imgId my-2 img-fluid"  src={`${SERVER_URL}/${user.bookImage}`} width={300}  height={300}  alt="" />
         </div>
 
          <div className='col-md-4 d-block'>
