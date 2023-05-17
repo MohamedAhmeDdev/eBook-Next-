@@ -4,6 +4,7 @@ import Paginattion from "./Paginattion"
 import { useState, useEffect } from 'react'
 import Link from 'next/link';
 import Image from 'next/image';
+import {SERVER_URL} from '../context'
 
 
 function Cards({selectedCategory, wishlist, setWishlist, }) {
@@ -14,7 +15,7 @@ function Cards({selectedCategory, wishlist, setWishlist, }) {
 
 
     const getAllBooks = async () => {
-        const response = await axios.get('http://localhost:5000/books');
+        const response = await axios.get(`${SERVER_URL}/books`);
         setBooks(response.data);
     }
     
@@ -50,7 +51,7 @@ function Cards({selectedCategory, wishlist, setWishlist, }) {
         {currentPosts.map((book, id) => (
         <div key={id} className='card col-4 col-md-3 col-lg-2 col-xl-2 col-xxl-2'>
            <div className=''>
-            <Image className='card-img-top' src={`http://localhost:5000/${book.bookImage}`} alt={book.bookName} />
+            <img className='card-img-top' src={`${SERVER_URL}/${book.bookImage}`} alt={book.bookName} />
             <div className='card-body'>
               <h5 className='card-title'>{book.bookName}</h5>
               <p className='card-text'>{book.BookType}</p>

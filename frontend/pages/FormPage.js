@@ -1,5 +1,6 @@
 import React, { useState } from 'react'
 import axios from "axios"
+import {SERVER_URL} from './context'
 
 function FormPage() {
     const[bookName, setBookName] = useState('')
@@ -27,7 +28,7 @@ function FormPage() {
         formData.append('BookPrice', BookPrice)
         formData.append('BookType', BookType)
 
-        await axios.post('http://localhost:5000/books',formData)
+        await axios.post(`${SERVER_URL}/books`,formData)
         {
         setBookName('');
         setBookAuthor('');
