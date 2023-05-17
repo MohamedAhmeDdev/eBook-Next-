@@ -51,7 +51,8 @@ function Cards({selectedCategory, wishlist, setWishlist, }) {
         {currentPosts.map((book, id) => (
         <div key={id} className='card col-4 col-md-3 col-lg-2 col-xl-2 col-xxl-2'>
            <div className=''>
-            <img className='card-img-top' src={`${SERVER_URL}/${book.bookImage}`} alt={book.bookName} />
+           <Image className='card-img-top' src={`https://ebook-bxky.onrender.com/${book.bookImage}`} width={300}  height={300} alt={book.bookName}/>
+
             <div className='card-body'>
               <h5 className='card-title'>{book.bookName}</h5>
               <p className='card-text'>{book.BookType}</p>

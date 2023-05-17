@@ -36,7 +36,7 @@ function WishList({ setWishlist, wishlist }) {
                 <div className={list.book.BookPrice === 'free' ? 'badge bg-success price' : 'badge bg-info price'}>
                   {list.book.BookPrice}
                 </div>
-                <img className='img-fluid' src={`${SERVER_URL}/${list.book.bookImage}`} alt={list.bookName} />
+                <Image className='img-fluid' src={`https://ebook-bxky.onrender.com/${list.book.bookImage}`} width={300}  height={300}  alt={list.bookName} />
               </div>
               <div className='card-body'>
                 <h5 className='card-title text-lowercase fs-6'>{list.book.bookName}</h5>
