@@ -4,7 +4,7 @@ import Paginattion from "./Paginattion"
 import { useState, useEffect } from 'react'
 import Link from 'next/link';
 import Image from 'next/image';
-import {SERVER_URL} from '../context'
+import {SERVER_URL} from '../../context'
 
 
 function Cards({selectedCategory, wishlist, setWishlist, }) {

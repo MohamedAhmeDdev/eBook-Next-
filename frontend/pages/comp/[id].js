@@ -1,6 +1,6 @@
 import { useState } from 'react'
 import Image from 'next/image';
-import {SERVER_URL} from '../context'
+import {SERVER_URL} from '../../context'
 
 export const getStaticPaths = async () => {
   const res = await fetch(`${SERVER_URL}/books`);

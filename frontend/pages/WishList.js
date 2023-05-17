@@ -3,7 +3,7 @@ import Head from 'next/head'
 import { useState, useEffect } from 'react'
 import Link from 'next/link';
 import Image from 'next/image';
-import {SERVER_URL} from './context'
+
 
 function WishList({ setWishlist, wishlist }) {
   const [free] = useState('free');
